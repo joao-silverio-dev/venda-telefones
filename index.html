@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Venda seu telefone usado</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <div class="title">
+                <h2>Formulário</h2>
+            </div>
+            <form class="formulario">
+                <h2>Venda facilmente seu telefone!</h2>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+                <div class="form-input">
+                    <label for="titulo-anuncio" name="titulo-anuncio" class="form-label">Título do Anúncio <span
+                            class="required">*</span></label>
+                    <input type="text" id="titulo-anuncio" required placeholder="Digite o título de seu anúncio">
+                </div>
+                <div class="form-input">
+                    <label for="preco-anuncio" name="preco-anuncio" class="form-label">Preço do Anúncio <span
+                            class="required">*</span></label>
+                    <input type="number" id="preco-anuncio" required placeholder="Defina o preço do seu anúncio">
+                </div>
+                <div class="form-input">
+                    <label for="descricao-anuncio" name="descricao-anuncio" class="form-label">Descrição</label>
+                    <textarea name="textarea" id="descricao-anuncio"
+                        placeholder="Defina se seu dispositivo possui algum detalhe como arranhões ou problemas de funcionamento."
+                        rows="3"></textarea>
+                </div>
+                <div class="form-input">
+                    <label for="marca-anuncio" name="marca-anuncio" class="form-label">Marca <span
+                            class="required">*</span></label>
+                    <input type="text" name="marca-anuncio" id="marca-anuncio"
+                        placeholder="Digite a marca do seu dispositivo" required>
+                </div>
+                <div class="form-input">
+                    <label for="modelo-anuncio" name="modelo-anuncio" class="form-label">Modelo <span
+                            class="required">*</span></label>
+                    <input type="text" name="modelo-anuncio" id="modelo-anuncio"
+                        placeholder="Digite o modelo do dispositivo" required>
+                </div>
+                <div class="form-input">
+                    <label for="data-compra-anuncio" name="data-compra-anuncio" class="form-label">Data de Compra <span
+                            class="required">*</span><span class="observacao">Pode ser data aproximada</span></label>
+                    <input type="date" name="data-compra-anuncio" id="data-compra-anuncio" required>
+                </div>
+                <div class="form-input">
+                    <label class="form-label">Sistema Operacional <span class="required">*</span></label>
+                    <input type="radio" name="sistema-operacional" id="ios"><label for="ios" class="radio">iOS</label>
+                    <input type="radio" name="sistema-operacional" id="android"><label for="android"
+                        class="radio">Android</label>
+                    <input type="radio" name="sistema-operacional" id="outro"><label for="outro"
+                        class="radio">Outro</label>
+                    <input type="text" name="sistema-operacional" id="sistema-operacional"
+                        placeholder="Digite o sistema operacional caso tenha selecionado outro:">
+                </div>
+                <div class="form-input">
+                    <label for="armazenamento-interno" class="form-label">Armazenamento Interno <span
+                            class="required">*</span></label>
+                    <select name="armazenamento-interno" id="armazenamento-interno" required>
+                        <option value="gb16">16GB</option>
+                        <option value="gb32">32GB</option>
+                        <option value="gb64">64GB</option>
+                        <option value="gb128">128GB</option>
+                        <option value="gb256">256GB</option>
+                        <option value="gb512">512GB</option>
+                        <option value="tb1">1TB</option>
+                        <option value="tb2">2TB</option>
+                    </select>
+                </div>
+                <div class="form-input">
+                    <label for="opcionais" class="form-label">Opcionais</label>
+                    <ul>
+                        <li> <label for="oled"><input type="checkbox" name="opcionais" id="oled">Tela Oled</label></li>
+                        <li><label for="fone-de-ouvido"><input type="checkbox" name="opcionais"
+                                    id="fone-de-ouvido">Entrada para Fone de Ouvido</label></li>
+                        <li><label for="entrada-microsd"><input type="checkbox" name="opcionais"
+                                    id="entrada-microsd">Entrada pra microSD</label></li>
+                        <li><label for="dual-sim"><input type="checkbox" name="opcionais" id="dual-sim">Dual SIM</label>
+                    </ul>
+                    <ul>
+                        <li><label for="stylus"><input type="checkbox" name="opcionais" id="stylus">Acompanha
+                                Stylus</label></li>
+                        <li><label for="telefoto"><input type="checkbox" name="opcionais" id="telefoto">Câmera
+                                Telefoto</label></li>
+                        <li><label for="dobravel"><input type="checkbox" name="opcionais"
+                                    id="dobravel">Dobrável</label></li>
+                        <li><label for="teclado-fisico"><input type="checkbox" name="opcionais" id="teclado-fisico">Teclado Físico</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-input">
+                    <label for="fotos-telefone" class="form-label">Fotos do Telefone</label>
+                    <input type="file" name="fotos-telefone" id="fotos-telefone">
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
